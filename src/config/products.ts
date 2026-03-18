@@ -59,14 +59,15 @@ export const PRODUCTS: Record<string, ProductData> = {
       { name: "Coffee & Food", image: "/assets/Stains/stain-food-denim-pocket.png" },
       { name: "Blood & Protein", image: "/assets/Stains/stain-red-drop-white-shirt.png" },
       { name: "Urine & Pet Messes", image: "/assets/Stains/stain-pet-accident-rug.png" },
-      { name: "Grass & Sweat", image: "/assets/Stains/stain-underarm-yellowing-closeup.png" },
+      { name: "Sweat & Yellowing", image: "/assets/Stains/stain-underarm-yellowing-closeup.png" },
       { name: "Everyday Mud", image: "/assets/Stains/stain-grease-shirt-cuff.png" },
+      { name: "Grass Stains", image: "/assets/Stains/grass-stained-baseball-pants.png" },
+      { name: "Juice & Fruit", image: "/assets/Stains/stain-orange-juice-white-shirt.png" },
     ],
     useCases: [
       { name: "Kids' Clothes", image: "/assets/lifestyle/lifestyle-family-laundry-room.png", description: "Save play clothes from dirt and grass." },
       { name: "Workwear", image: "/assets/lifestyle/lifestyle-workwear-man-shop.png", description: "Remove grease and oil from shop shirts." },
-      { name: "Athletic Gear", image: "/assets/Stains/stain-orange-juice-white-shirt.png", description: "Safe enough for your favorite synthetics and blends." },
-      { name: "Linens", image: "/assets/lifestyle/lifestyle-family-laundry-room.png", description: "Treat bedding and towels before they go in the wash." },
+      { name: "Baseball Pants", image: "/assets/Stains/grass-stained-baseball-pants.png", description: "Safe enough for your favorite synthetics and blends." },
     ],
     reviews: [
       { author: "Sarah M.", text: "This saved my favorite white shirt from a massive coffee spill. I've never seen anything like it.", stars: 5, location: "Verified Purchase" },
