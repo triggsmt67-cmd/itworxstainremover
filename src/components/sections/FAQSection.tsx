@@ -2,7 +2,7 @@
 
 import { Container } from "@/components/ui/Container";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, HelpCircle, Star } from "lucide-react";
+import { ChevronDown, HelpCircle, Star, ExternalLink } from "lucide-react";
 import { useState } from "react";
 import { AmazonCTA } from "@/components/ui/AmazonCTA";
 import { ProductData } from "@/config/products";
@@ -89,8 +89,21 @@ export function FAQSection({ product }: { product: ProductData }) {
               Keep IT-WORX on hand for the coffee spills, grease marks, pet messes, and everyday stains that a normal wash can miss.
             </p>
             
-            <div className="mt-4">
+            <div className="mt-4 flex flex-col sm:flex-row items-center gap-4">
               <AmazonCTA url={product.amazonUrl} label={product.ctaLabels.final} variant="primary" />
+              <motion.a
+                href="https://www.amazon.com/review/create-review/?channel=glance-detail&asin=B0DPR93VJY&ie=UTF8"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="relative inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-bold transition-all duration-200 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 overflow-hidden shadow-premium group border-2 border-white/20 text-white hover:bg-white hover:text-[#111827] focus:ring-white"
+              >
+                <span className="relative z-10 flex items-center gap-2">
+                  Leave an Amazon review
+                  <ExternalLink className="w-4 h-4" />
+                </span>
+              </motion.a>
             </div>
             
             <div className="mt-4 flex items-center gap-4 text-sm font-bold opacity-60 uppercase tracking-widest">
