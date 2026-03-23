@@ -68,7 +68,7 @@ export function FAQSection({ product }: { product: ProductData }) {
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            transition={{ duration: 1 }}
-           className="relative overflow-hidden rounded-[3rem] bg-[#111827] px-12 py-20 text-center text-white"
+           className="relative overflow-hidden rounded-[3rem] bg-diamond-dark shadow-[inset_0_0_80px_rgba(0,0,0,0.4)] border border-gray-700 px-12 py-20 text-center text-white"
         >
           {/* Decorative Texture */}
           <div className="grain-overlay opacity-[0.05]" />
@@ -81,11 +81,11 @@ export function FAQSection({ product }: { product: ProductData }) {
               ))}
             </div>
             
-            <h2 className="text-5xl md:text-7xl font-extrabold max-w-4xl tracking-tight leading-[1.05]">
+            <h2 className="text-5xl md:text-7xl font-black italic uppercase max-w-4xl tracking-tight leading-[1.05]">
               Treat the stain before it sets.
             </h2>
             
-            <p className="text-xl md:text-2xl text-white/70 font-medium max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-300 font-medium max-w-2xl mx-auto leading-relaxed">
               Keep IT-WORX on hand for the coffee spills, grease marks, pet messes, and everyday stains that a normal wash can miss.
             </p>
             

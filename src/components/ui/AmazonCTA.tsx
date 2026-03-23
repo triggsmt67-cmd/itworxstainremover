@@ -16,7 +16,7 @@ export function AmazonCTA({ url, label, variant = "primary", className }: Amazon
   
   const variants = {
     primary: "bg-[#FF6B00] text-white hover:bg-[#E66000] focus:ring-[#FF6B00]",
-    secondary: "bg-[#111827] text-white hover:bg-[#1F2937] focus:ring-[#111827]",
+    secondary: "bg-[#1F2937] text-white hover:bg-[#374151] focus:ring-[#1F2937]",
     outline: "border-2 border-[#111827] text-[#111827] hover:bg-[#111827] hover:text-white focus:ring-[#111827]",
     sticky: "bg-[#FF6B00] text-white hover:bg-[#E66000] focus:ring-[#FF6B00] px-6 py-3 text-base shadow-elevated",
   };

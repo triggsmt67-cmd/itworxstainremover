@@ -30,12 +30,12 @@ export function StepsAndMechanism({ product }: { product: ProductData }) {
                 src={product.images.mechanism}
                 alt="Proven IT-WORX Action"
                 fill
-                className="object-cover"
+                className="object-cover object-[60%_top]"
               />
-              {/* Floating Badge */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-8 bg-white/80 backdrop-blur rounded-full border border-white text-center shadow-elevated">
-                <p className="text-3xl font-extrabold text-[#111827]">Why It Works</p>
-                <p className="text-sm font-bold opacity-70 uppercase tracking-widest text-[#FF6B00]">Proven</p>
+              {/* Small Floating Badge */}
+              <div className="absolute bottom-6 right-6 px-6 py-3 bg-white/90 backdrop-blur rounded-full border border-[#E6E8EA] text-center shadow-elevated">
+                <p className="text-xl font-extrabold text-[#111827]">Why It Works</p>
+                <p className="text-xs font-bold opacity-80 uppercase tracking-wider text-[#FF6B00]">Proven</p>
               </div>
             </div>
           </motion.div>

@@ -16,7 +16,7 @@ const iconMap = {
 
 export function Hero({ product }: { product: ProductData }) {
   return (
-    <section className="relative overflow-hidden pt-20 pb-20 md:pt-32 md:pb-32 bg-[#FDFCFB]">
+    <section className="relative overflow-hidden pt-20 pb-20 md:pt-32 md:pb-32 bg-diamond-dark text-white">
       {/* Visual Grain */}
       <div className="grain-overlay" />
       
@@ -32,15 +32,15 @@ export function Hero({ product }: { product: ProductData }) {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="flex flex-col gap-8"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FF6B00]/10 text-[#FF6B00] text-sm font-bold uppercase tracking-wider">
+            <div className="inline-flex w-max items-center gap-2 px-3 py-1 rounded-full bg-white text-[#FF6B00] text-sm font-black uppercase tracking-wider shadow-sm">
               {product.tagline}
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-extrabold text-[#111827] leading-[1.05] tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-black italic uppercase text-white leading-[1.05] tracking-tight">
               {product.headline}
             </h1>
             
-            <p className="text-xl md:text-2xl text-[#4B5563] leading-relaxed max-w-xl">
+            <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-xl">
               {product.subheadline}
             </p>
             
@@ -52,21 +52,25 @@ export function Hero({ product }: { product: ProductData }) {
                 className="w-full sm:w-auto"
               />
               <div className="flex flex-col">
-                <div className="flex -space-x-1 mb-1">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <span key={i} className="text-[#FFB800] text-lg">★</span>
-                  ))}
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-lg font-black text-[#FFB800]">4.1</span>
+                  <div className="flex -space-x-1">
+                    {[1, 2, 3, 4].map((i) => (
+                      <span key={i} className="text-[#FFB800] text-lg">★</span>
+                    ))}
+                    <span className="text-gray-600 text-lg">★</span>
+                  </div>
                 </div>
-                <p className="text-sm font-bold text-[#111827]">Rated by Amazon customers</p>
+                <p className="text-sm font-bold text-white">Rated by Amazon customers</p>
               </div>
             </div>
             
             {/* Trust Badges */}
-            <div className="flex flex-wrap gap-x-8 gap-y-4 mt-8 pt-8 border-t border-[#E6E8EA]">
+            <div className="flex flex-wrap gap-x-8 gap-y-4 mt-8 pt-8 border-t border-gray-800">
               {product.trustBadges.map((badge, idx) => {
                 const Icon = iconMap[badge.icon as keyof typeof iconMap] || Shield;
                 return (
-                  <div key={idx} className="flex items-center gap-2 text-sm font-bold text-[#6B7280]">
+                  <div key={idx} className="flex items-center gap-2 text-sm font-bold text-gray-400">
                     <Icon className="w-4 h-4 text-[#FF6B00]" strokeWidth={3} />
                     <span>{badge.text}</span>
                   </div>

@@ -25,7 +25,7 @@ export function ProductLayout({ children, hook }: ProductLayoutProps) {
       />
 
       {/* 1. Pattern Interrupt / Hook (Header Bar) */}
-      <div className="bg-[#111827] text-white py-3 px-6 text-center text-sm font-bold uppercase tracking-[0.2em] relative z-[100]">
+      <div className="bg-[#1F2937] text-white py-3 px-6 text-center text-sm font-bold uppercase tracking-[0.2em] relative z-[100]">
         <div className="grain-overlay opacity-[0.1]" />
         {hook}
       </div>

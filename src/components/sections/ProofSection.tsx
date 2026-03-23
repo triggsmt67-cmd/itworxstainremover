@@ -64,15 +64,15 @@ export function ProofSection({ product }: { product: ProductData }) {
               ))}
             </div>
             
-            <div className="mt-4 p-8 bg-[#111827] rounded-2xl text-white shadow-elevated">
-              <p className="text-lg font-medium leading-relaxed opacity-90 italic">
+            <div className="mt-4 p-8 bg-diamond-dark border border-gray-700 rounded-2xl text-white shadow-elevated">
+              <p className="text-lg font-bold italic leading-relaxed opacity-90 text-white">
                 "I was skeptical. I've tried everything on my husband's shop shirts. IT-WORX is the only thing that actually cut through the heavy grease without a second wash."
               </p>
-            <div className="mt-4 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#FF6B00] flex items-center justify-center text-white font-bold text-xs uppercase">WW</div>
+            <div className="mt-6 flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-[#FF6B00] flex items-center justify-center text-white font-black text-xs uppercase shadow-sm">WS</div>
                 <div className="text-sm">
-                  <p className="font-bold">Workwear Wendy</p>
-                  <p className="text-white/60">Verified Purchase</p>
+                  <p className="font-black uppercase tracking-wider text-white">Wendy S.</p>
+                  <p className="text-gray-400 font-bold uppercase text-xs tracking-widest">Verified Purchase</p>
                 </div>
               </div>
             </div>
