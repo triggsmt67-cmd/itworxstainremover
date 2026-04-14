@@ -32,7 +32,7 @@ export function Hero({ product }: { product: ProductData }) {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="flex flex-col gap-8"
           >
-            <div className="inline-flex w-max items-center gap-2 px-3 py-1 rounded-full bg-white text-[#FF6B00] text-sm font-black uppercase tracking-wider shadow-sm">
+            <div className="inline-flex w-fit max-w-full items-center justify-center rounded-3xl bg-white px-4 py-2 text-center text-[#FF6B00] text-xs sm:text-sm font-black uppercase tracking-wider shadow-sm">
               {product.tagline}
             </div>
             
